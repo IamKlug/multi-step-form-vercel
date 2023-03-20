@@ -1,0 +1,123 @@
+@media (min-width: 600px ) {
+    .App {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .outer{
+        padding: 5%;
+        flex-grow: 1;
+    }
+
+    .inner{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        translate: 0 0;
+        box-shadow: none;
+        background-color: none;
+    }
+
+    form{
+        flex-direction: row;
+        justify-content: start;
+        height: 495px;
+        width: 80%;
+        border-radius: 15px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 40px -20px rgba(0, 0, 0, 0.0951141);
+    }
+
+    .plan-selection-box{
+        flex-direction: row;
+        justify-content: space-between;
+        height: 160px;
+        
+        
+    }
+
+    .select-plan-button{
+        flex-direction: column;
+        margin: 5px;
+        flex-grow: 1;
+        height: auto;
+    
+    }
+
+    .page-indicator{
+        flex-direction: column;
+        justify-content: start;
+        padding: 1.5%;
+        padding-top: 3%;
+        width: 25%;
+        height: 95%;
+        margin: 2%;
+        border-radius: 10px;
+    }
+
+    .page-number{
+        margin-left: 0;
+    }
+
+    .form-footer{
+        position: relative;
+        bottom: auto;
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .next-button{
+        margin: 0;
+    }
+
+    .page-number {
+        margin-bottom: 15%;
+    }
+
+    .pink-blob{
+        width: 100%;
+        height: 27%;
+        z-index: 2;
+        border-bottom-right-radius: 10px;
+      }
+      
+      .teal-blob{
+        width: 95%;
+        height: 45%;
+        border-bottom-left-radius: 10px;
+      }
+      
+      .orange-circle {
+        width: 50%;
+        height: 28%;
+        border-bottom-left-radius: 10px;
+      }
+
+
+}
+
+@media(max-width: 600px){
+    .display-text{
+        display: none;
+    }
+}
+
+@media (min-width: 800px){
+    .page-number{
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .page-indicator{
+        flex-direction: column;
+        justify-content: start;
+        padding: 3%;
+        width: 275px;
+        height: 90%;
+        border-radius: 10px;
+    }
+}
+
+
+

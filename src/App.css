@@ -1,0 +1,282 @@
+*{
+  margin: 0;
+  font-family: 'Ubuntu';
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 950px;
+}
+
+.App {
+  height: 100vh;
+  background: #EFF5FF;
+}
+
+.bold-font {
+  font-weight: 700;
+  color: #022959;;
+  margin: 0;
+}
+.title-spacing {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.medium-font {
+font-weight: 500;
+color: #9699AB;
+}
+
+.regular-font {
+font-weight: 400;
+}
+
+.font-size {
+font-size: 16px;
+color: #9699AB;
+}
+
+.page-indicator{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  background: #483EFF;
+  padding: 10%;
+  box-sizing: border-box;
+  padding-bottom: 25%;
+  
+}
+
+.page-number{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px; 
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 5;
+}
+
+.page-number-container{
+  display: flex;
+}
+.page-step-font{
+  font-size: 12px;
+  color: #ABBCFF
+}
+.page-desc-font{
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+
+}
+
+.personal-input {
+    height: 2em;
+    color: hsl(231, 11%, 63%);
+    border: hsl(231, 11%, 63%) solid 1px;
+    border-radius: 2.5px;
+}
+.plan-selection-box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.option-border {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4em;
+  background-color: #FFFFFF;
+  border: hsl(231, 11%, 63%) solid 1px;
+  color: hsl(231, 11%, 63%);
+  border: hsl(231, 11%, 63%) solid 1px;
+  border-radius: 5px;
+  margin-bottom: .75em;
+  padding: 1.5%;
+}
+
+input[type="checkbox"]:checked{
+  background: #F8F9FF;
+  border: 1px solid #483EFF;
+}
+
+.select-plan-button {
+  justify-content: flex-start;
+}
+
+.selected {
+  background: #F8F9FF;
+  border: 1px solid #483EFF;
+}
+
+.personal-label {
+  margin-top: 1em;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+/*  */
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.outer{
+
+  z-index: 5;
+}
+
+.inner {
+  min-height: 400px;
+  padding: 5%;
+  margin: 5%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 1px 1px, rgba(0, 0, 0, 0.04) 0px 2px 2px, rgba(0, 0, 0, 0.04) 0px 4px 4px, rgba(0, 0, 0, 0.04) 0px 8px 8px, rgba(0, 0, 0, 0.04) 0px 16px 16px;
+  border-radius: 10px;
+  translate: 0 -17.5% ;
+  z-index: 5;
+}
+
+.form-footer {
+  position: fixed;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4em;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 2.5%) 1px 0px 0px 1px;
+}
+
+.next-button {
+  margin: 1em;
+  height: 2.5em;
+  width: 6.5em;
+  border: none;
+  background-color: hsl(213, 96%, 18%);
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.back-button{
+  color: #9699AA;
+  background-color: white;
+}
+
+.white-out-back-button {
+  color: white;
+}
+
+.billing-period {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 3em;
+ background-color: hsl(231, 100%, 98%);
+ border-radius: 5px;
+}
+
+.confirm{
+  background: #483EFF;
+}
+
+.billing-statement{
+  justify-content: space-between;
+}
+
+.total-cost{
+  background: none;
+}
+
+.total-cost-amount{
+  font-size: 20px;
+  color: #483EFF;
+}
+
+.checkbox {
+  background: #483EFF;
+  height: 20px;
+  width: 20px;
+  border: hsl(231, 11%, 63%) solid 1px;
+  border-radius: 4px;
+}
+
+.showCost {
+  color: #483EFF;;
+}
+
+.gap {
+  margin-bottom: 10%;
+}
+
+.validation-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.validation-popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.conformation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.pink-blob{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.teal-blob{
+  position: absolute;
+  bottom: 0;
+  left: 0
+}
+
+.orange-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0
+}
+
+ svg {
+  overflow: hidden;
+ }
+
+ .gamer-icons{
+  margin: 5px;
+ }
